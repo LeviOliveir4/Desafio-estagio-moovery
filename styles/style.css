@@ -1,0 +1,195 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background: var(--violet);    
+    position: relative;
+}
+
+
+/*Header and Container*/
+.left{
+    background-color:#813fa5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;   
+}
+.left img{
+    height: 120px;
+}
+.container header{
+    width: 100vw;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    background-color:#813fa5;
+}
+.container header .right{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.container header .right .login{
+    color: var(--black);
+    font-weight: 600;
+}
+.container header .right .signup{
+    background-color: #5f2b7a;
+    margin-right: 1rem;
+    padding: 0.5rem 1.5rem;
+    color: #fff;
+    border-radius: 1rem;   
+}
+.container header .right .signup:hover{
+    background-color: rgb(35, 5, 48);
+}
+/*end*/
+
+
+
+
+
+
+
+
+
+
+/*Container and Form*/
+form{
+    text-align: center;
+    width: 100vw;
+    margin-top: 4rem;
+    padding: 3rem;
+}
+form input{
+    width: 35%;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+form h1{
+    text-shadow: rgb(57, 14, 73) 1px 0 10px;
+    color: var(--black  );
+    text-align: center;
+    margin-bottom: 2rem;
+}
+form button{
+    width: 18%;
+    padding: 1rem 1.15rem;
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: #5f2b7a;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+form button:hover{
+    background-color: rgb(35, 5, 48);
+}
+.container .results{
+    width: 100%;
+    margin-top: 1rem;
+}
+.container .results .result{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    background-color: rgb(35, 5, 48);
+    color: var(--white);
+}
+.container .results .result .shorted{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.container .results .result p {
+    color: var(--black);
+    font-weight: 600;
+  }
+  .container .results .result b{
+    color: rgb(114, 70, 218);
+  }
+.container .results .result .shorted button{
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    border: 2px solid var(--dark-violet);
+    font-weight: 700;
+    background: transparent;
+}
+.container .results .result .shorted button:hover{
+    background-color: var(--dark-violet);
+    color: var(--white);
+    transition: all 0.5s ease-in-out;
+}
+/*end*/
+
+
+
+
+
+
+/*Copiado √*/
+.popup{
+    display: none;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: var(--green);
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;    
+}
+.popup.active{
+    display: block;
+    transition: all 0.2s ease-in-out;    
+}
+/*end*/
+
+
+
+
+
+
+
+
+/*Letras Flutuantes*/
+.wavy{
+    position: relative;
+    -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.082));
+    text-align: center;
+    
+}
+.wavy span{
+    text-shadow: rgb(57, 14, 73) 1px 0 10px;
+    position:relative;
+    display: inline-flex;
+    margin-top: 2rem;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: uppercase;
+    animation: animate 2s ease-in-out infinite;
+    animation-delay: calc(0.1s* var(--i));
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+    40%,100%{
+        transform: translateY(0px);
+    }
+}
+/*end*/
