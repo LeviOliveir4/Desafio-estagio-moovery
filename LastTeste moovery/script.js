@@ -1,3 +1,4 @@
+//3 VARIÁVEIS, ERRADO X:
 // function inverte(){
 //     var num1 = parseFloat(document.getElementById("numero1").value);
 //     var num2 = parseFloat(document.getElementById("numero2").value);
@@ -17,7 +18,7 @@
 
 // }
 
-
+//2 VARIÁVEIS, CERTO✔ :
 //Problema resolvido(Não da forma correta)!
 let a = 1
 let b = 2
