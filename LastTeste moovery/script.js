@@ -16,3 +16,12 @@ function inverte(){
          "numero2=" +num2+"\n\n");
 
 }
+
+
+//Problema resolvido(Não da forma correta)!
+// let a = 1
+// let b = 2
+
+// console.log(`O valor de A: ${a} O valor de B: ${b}`);
+
+// console.log(` Valores invertidos: valor de B: ${b - a} e o valor de A: ${ a + 1}`);
